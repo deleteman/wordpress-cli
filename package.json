@@ -1,0 +1,50 @@
+{
+  "name": "wp-client",
+  "version": "0.0.0",
+  "author": "Fernando Doglio @deleteman",
+  "bin": {
+    "wp-client": "./bin/run"
+  },
+  "bugs": "https://github.com/deleteman/wp-client/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.11",
+    "@oclif/config": "^1.12.9",
+    "@oclif/plugin-help": "^2.1.6",
+    "config": "^3.0.1",
+    "request": "^2.88.0",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.21.3",
+    "globby": "^8.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/deleteman/wp-client",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "wp-client",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "deleteman/wp-client",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}

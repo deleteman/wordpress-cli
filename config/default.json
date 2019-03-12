@@ -1,0 +1,12 @@
+{
+	"wp-api": {
+		"url": "http://www.example.com/wp-json",
+		"endpoints": {
+			"list": "/wp/v2/posts",
+			"get": "/wp/v2/posts/:id",
+			"update": "/wp/v2/posts/:id",
+			"delete": "/wp/v2/posts/:id",
+			"create": "/wp/v2/posts"
+		}
+	}
+}
